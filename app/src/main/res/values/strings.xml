@@ -5,5 +5,7 @@
     <string name="button_signup">Sign Up</string>
     <string name="button_register">Register</string>
     <string name="button_hello">Hello</string>
+    <string name="button_movies">Movies</string>
     <string name="button_world">World</string>
+    <string name="placeholder">Placeholder</string>
 </resources>
