@@ -17,14 +17,17 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val clickCamera = findViewById<Button>(R.id.btn_camera);
+        clickCamera.setOnClickListener {
+            val intent = Intent(this, TrafficCamActivity::class.java)
+            startActivity(intent)
+        }
+
         val clickLogin = findViewById<Button>(R.id.btn_login);
         clickLogin.setOnClickListener {
             Toast.makeText(this,"Login",Toast.LENGTH_SHORT).show()
         }
-        val clickReg = findViewById<Button>(R.id.btn_register);
-        clickReg.setOnClickListener {
-            Toast.makeText(this,"Register",Toast.LENGTH_SHORT).show()
-        }
+
         val clickSignUp = findViewById<Button>(R.id.btn_signup);
         clickSignUp.setOnClickListener {
             Toast.makeText(this,"Sign Up",Toast.LENGTH_SHORT).show()

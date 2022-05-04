@@ -16,14 +16,9 @@ class MovieList : AppCompatActivity() {
         actionBar!!.title = "Movies"
         actionBar.setDisplayHomeAsUpEnabled(true);
 
-        val recyclerView:RecyclerView = findViewById(R.id.recycler_view)
+        val recyclerView:RecyclerView = findViewById(R.id.recyclerView)
         recyclerView.adapter = Adapter(movieData) { position: Int -> onMovieClick(position) }
     }
-        //val arrayAdapter: ArrayAdapter<String> = ArrayAdapter(this,
-            // android.R.layout.simple_list_item_1, movies[0])
-
-        //listView.adapter = arrayAdapter
-        //listView.onItemClickListener = this
 
     fun onMovieClick(position: Int){
         val selectedMovie = movieData[position]

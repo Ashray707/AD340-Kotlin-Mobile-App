@@ -26,7 +26,7 @@
         app:layout_constraintEnd_toStartOf="@+id/btn_world"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_register" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_camera" />
 
     <Button
         android:id="@+id/btn_world"
@@ -51,16 +51,16 @@
         android:text="@string/button_signup"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btn_register"
+        app:layout_constraintStart_toEndOf="@+id/btn_camera"
         app:layout_constraintTop_toBottomOf="@+id/btn_login" />
 
     <Button
-        android:id="@+id/btn_register"
+        android:id="@+id/btn_camera"
         android:layout_width="145dp"
         android:layout_height="56dp"
         android:layout_marginStart="45dp"
         android:layout_marginTop="24dp"
-        android:text="@string/button_register"
+        android:text="@string/button_camera"
         app:layout_constraintEnd_toStartOf="@+id/btn_signup"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"

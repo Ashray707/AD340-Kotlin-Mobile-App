@@ -3,7 +3,7 @@
     <string name="edit_message">Enter a message</string>
     <string name="button_login">Login</string>
     <string name="button_signup">Sign Up</string>
-    <string name="button_register">Register</string>
+    <string name="button_camera">Camera</string>
     <string name="button_hello">Hello</string>
     <string name="button_movies">Movies</string>
     <string name="button_world">World</string>
