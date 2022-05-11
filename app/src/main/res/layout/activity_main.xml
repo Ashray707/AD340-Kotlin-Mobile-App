@@ -26,7 +26,7 @@
         app:layout_constraintEnd_toStartOf="@+id/btn_world"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_camera" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_traffic_cam" />
 
     <Button
         android:id="@+id/btn_world"
@@ -39,29 +39,29 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btn_hello"
-        app:layout_constraintTop_toBottomOf="@+id/btn_signup" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_cam_map" />
 
     <Button
-        android:id="@+id/btn_signup"
+        android:id="@+id/btn_cam_map"
         android:layout_width="145dp"
         android:layout_height="56dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="45dp"
-        android:text="@string/button_signup"
+        android:text="@string/button_cameraMap"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btn_camera"
+        app:layout_constraintStart_toEndOf="@+id/btn_traffic_cam"
         app:layout_constraintTop_toBottomOf="@+id/btn_login" />
 
     <Button
-        android:id="@+id/btn_camera"
+        android:id="@+id/btn_traffic_cam"
         android:layout_width="145dp"
         android:layout_height="56dp"
         android:layout_marginStart="45dp"
         android:layout_marginTop="24dp"
         android:text="@string/button_camera"
-        app:layout_constraintEnd_toStartOf="@+id/btn_signup"
+        app:layout_constraintEnd_toStartOf="@+id/btn_cam_map"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_message" />

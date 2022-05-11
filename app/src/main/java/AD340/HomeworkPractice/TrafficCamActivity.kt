@@ -1,5 +1,6 @@
 package AD340.HomeworkPractice
 
+import android.annotation.SuppressLint
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 import android.os.Build
@@ -79,6 +80,7 @@ class TrafficCamActivity : AppCompatActivity() {
     }
 
     // check for network connection
+    @SuppressLint("MissingPermission")
     @RequiresApi(Build.VERSION_CODES.M)
     fun checkNetworkConnection(){
         val connectivityManager = getSystemService(ConnectivityManager::class.java)

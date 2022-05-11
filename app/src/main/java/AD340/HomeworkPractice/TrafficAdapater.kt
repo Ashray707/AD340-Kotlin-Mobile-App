@@ -35,7 +35,6 @@ class TrafficAdapter(
     override fun onBindViewHolder(holder: TrafficViewHolder, position: Int) {
         holder.title.text = apiCam[position].Description
 
-        // load sdot not wsdot needs fixing
         val cam = apiCam[position]
         val imgurl = cam.imageUrl()
         Picasso.get().load(imgurl).into(holder.img)
@@ -43,9 +42,5 @@ class TrafficAdapter(
         // Loading image using Picasso
         // val ImgUrl = SDOT + apiCam[position].ImageUrl
         // Picasso.get().load(ImgUrl).into(holder.img)
-
-        // camera pic doesn't load when using WSDOT
-        // val ImgUrl2 = WSDOT + apiCam[position].ImageUrl
-        // Picasso.get().load(ImgUrl2).into(holder.img)
     }
 }

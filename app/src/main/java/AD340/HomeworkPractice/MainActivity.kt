@@ -11,15 +11,24 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // Movies List and Details Button
         val clickMovies = findViewById<Button>(R.id.btn_movies);
         clickMovies.setOnClickListener {
             val intent = Intent(this, MovieList::class.java)
             startActivity(intent)
         }
 
-        val clickCamera = findViewById<Button>(R.id.btn_camera);
+        // Traffic Cam Button
+        val clickCamera = findViewById<Button>(R.id.btn_traffic_cam);
         clickCamera.setOnClickListener {
             val intent = Intent(this, TrafficCamActivity::class.java)
+            startActivity(intent)
+        }
+
+        // Camera Map Button
+        val clickSignUp = findViewById<Button>(R.id.btn_cam_map);
+        clickSignUp.setOnClickListener {
+            val intent = Intent(this , CameraMap::class.java)
             startActivity(intent)
         }
 
@@ -28,10 +37,6 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this,"Login",Toast.LENGTH_SHORT).show()
         }
 
-        val clickSignUp = findViewById<Button>(R.id.btn_signup);
-        clickSignUp.setOnClickListener {
-            Toast.makeText(this,"Sign Up",Toast.LENGTH_SHORT).show()
-        }
         val clickHello = findViewById<Button>(R.id.btn_hello);
         clickHello.setOnClickListener {
             Toast.makeText(this,"Hello",Toast.LENGTH_SHORT).show()

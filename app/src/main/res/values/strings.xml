@@ -2,8 +2,8 @@
     <string name="app_name">AD340 Buttons</string>
     <string name="edit_message">Enter a message</string>
     <string name="button_login">Login</string>
-    <string name="button_signup">Sign Up</string>
-    <string name="button_camera">Camera</string>
+    <string name="button_cameraMap">Camera Map</string>
+    <string name="button_camera">Traffic Cam</string>
     <string name="button_hello">Hello</string>
     <string name="button_movies">Movies</string>
     <string name="button_world">World</string>
