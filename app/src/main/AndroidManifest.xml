@@ -10,7 +10,6 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -19,8 +18,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AD340HW">
 
+        <activity
+            android:name=".FirebaseActivity"
+            android:label="Firebase Activity"
+            android:parentActivityName=".MainActivity" />
         <!--
-            
              To get one, follow the directions here:
 
                 https://developers.google.com/maps/documentation/android-sdk/get-api-key
@@ -57,6 +59,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>

@@ -7,91 +7,90 @@
     tools:context=".MainActivity">
 
     <Button
+        android:id="@+id/login_button"
+        android:layout_width="145dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/login_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_input" />
+
+    <EditText
+        android:id="@+id/password_input"
+        android:layout_width="210dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:ems="14"
+        android:inputType="textPassword"
+        android:text="@string/user_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_input" />
+
+    <EditText
+        android:id="@+id/email_input"
+        android:layout_width="210dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:ems="14"
+        android:text="@string/user_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username_input" />
+
+    <EditText
+        android:id="@+id/username_input"
+        android:layout_width="210dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="24dp"
+        android:autofillHints=""
+        android:ems="14"
+        android:inputType="textPersonName"
+        android:text="@string/user_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_movies"
+        tools:ignore="MissingConstraints" />
+
+    <Button
         android:id="@+id/btn_movies"
         android:layout_width="145dp"
         android:layout_height="56dp"
-        android:layout_marginStart="132dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="110dp"
         android:text="@string/button_movies"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_hello" />
-
-    <Button
-        android:id="@+id/btn_hello"
-        android:layout_width="145dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="24dp"
-        android:text="@string/button_hello"
-        app:layout_constraintEnd_toStartOf="@+id/btn_world"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_traffic_cam" />
-
-    <Button
-        android:id="@+id/btn_world"
-        android:layout_width="145dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="45dp"
-        android:text="@string/button_world"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btn_hello"
-        app:layout_constraintTop_toBottomOf="@+id/btn_cam_map" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn_cam_map"
         android:layout_width="145dp"
         android:layout_height="56dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="45dp"
         android:text="@string/button_cameraMap"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btn_traffic_cam"
-        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn_traffic_cam"
         android:layout_width="145dp"
         android:layout_height="56dp"
         android:layout_marginStart="45dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="32dp"
         android:text="@string/button_camera"
         app:layout_constraintEnd_toStartOf="@+id/btn_cam_map"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_message" />
-
-    <EditText
-        android:id="@+id/text_message"
-        android:layout_width="199dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/edit_message"
-        app:layout_constraintEnd_toStartOf="@+id/btn_login"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btn_login"
-        android:layout_width="145dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="24dp"
-        android:text="@string/button_login"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/text_message"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
